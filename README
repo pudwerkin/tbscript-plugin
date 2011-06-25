@@ -1,0 +1,24 @@
+-- About the project ---------------------------------------------------------
+The addon was originally a project for a software engineering course
+(undergrad) at the College of William & Mary.
+
+To discuss licensing or other issues, contact kahowell.
+
+Original authors
+- Bert Cortina
+- Kevin Howell
+- Kartik Verma
+
+-- Prerequisites -------------------------------------------------------------
+- Thunderbird 3.1 (may work with other versions)
+- PyXPCOMExt - http://pyxpcomext.mozdev.org
+
+-- Compiling -----------------------------------------------------------------
+The provided Makefile should work for at least some flavors of Linux.
+Otherwise, compile fresh xpt files in the "components" directory and zip the
+entire directory up, rename to xpi. Then install per usual.
+
+-- Writing modules -----------------------------------------------------------
+Peruse the provided modules and Python (2.6) documentation. That should be
+sufficient.
+Maybe more info here later...
