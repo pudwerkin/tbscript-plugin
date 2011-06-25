@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="chrome://tbscript/skin/overlay.css" type="text/css"?>
+<!DOCTYPE overlay SYSTEM "chrome://tbscript/locale/overlay.dtd">
+<overlay id="tbscript-overlay" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+  <script src="overlay.js"/>
+
+  <toolbarpalette id="MailToolbarPalette">
+  <toolbarbutton id="tbscript-toolbar-button" class="toolbarbutton-1 chromeclass-toolbar-additional"
+    label="&tbscriptToolbarButton.label;" tooltiptext="&tbscriptToolbarButton.tooltip;"
+    oncommand="tbscript.onToolbarButtonCommand(event);"
+  />
+  </toolbarpalette>
+
+</overlay>

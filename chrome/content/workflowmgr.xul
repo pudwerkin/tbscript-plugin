@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+<?xml-stylesheet href="chrome://tbscript/skin/workflowmgr.css" type="text/css"?>
+
+<!DOCTYPE dialog SYSTEM "chrome://tbscript/locale/workflowmgr.dtd">
+<window title="&workflowmgr.title;" onload="workflowmgr.init()" orient="vertical" autostretch="always" width="800" height="600" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+	<script src="workflowmgr.js"/>
+    <vbox flex="1">
+      <hbox>
+        <vbox>
+          
+          <label class="big">Work with: </label>
+          <spacer flex="1" />
+        </vbox>
+        <vbox flex="1">
+          <menulist id="rootMenu" label="Error: No root modules found" disabled="true" oncommand="workflowmgr.setRootModule()" >
+            <menupopup id="rootModuleList">
+            </menupopup>
+          </menulist>
+          <hbox>
+          	<label>Settings: </label>
+          	<description flex="1" id="0settings" />
+            <button id="rootSettings" label="Change Settings" disabled="true" />
+          </hbox>
+        </vbox>
+      </hbox>
+      <separator class="thin"/>
+      <richlistbox id="workflowModuleList" flex="1">
+        <richlistitem id="empty">
+          <spacer flex="1" />
+          <label>No modules. Use [Append Module] to add one.</label>
+          <spacer flex="1" />
+        </richlistitem>
+      </richlistbox>
+      <hbox>
+        <button label="Append Module" oncommand="workflowmgr.appendModule()"/>
+        <spacer flex="1" />
+        <button label="Load Workflow" oncommand="workflowmgr.load()" />
+        <button label="Save Workflow" oncommand="workflowmgr.save()" />
+        <spacer flex="1" />
+        <button label="Run Workflow" oncommand="workflow.runWorkflow()"/>
+      </hbox>
+    </vbox>
+</window>

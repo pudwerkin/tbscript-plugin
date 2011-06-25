@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+<?xml-stylesheet href="chrome://tbscript/skin/workflowmgr.css" type="text/css"?>
+
+<!DOCTYPE dialog SYSTEM "chrome://tbscript/locale/modulelist.dtd">
+<dialog title="&modulelist.title;" onload="modulelist.init()" orient="vertical" width="640" height="480" autostretch="true" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul" buttons="accept,cancel" buttonlabelaccept="Append" ondialogaccept="modulelist.selectModule()">
+  <script src="modulelist.js" />
+  <richlistbox id="moduleList" flex="1" disabled="true">
+    <richlistitem disabled="true" id="error">
+      <spacer flex="1" />
+      <label id="emptyNodeList">Error: No node modules installed</label>
+      <spacer flex="1" />
+    </richlistitem>
+  </richlistbox>
+</dialog>

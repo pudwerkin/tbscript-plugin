@@ -1,0 +1,5 @@
+#tbscript-toolbar-button
+{
+  list-style-image: url("chrome://tbscript/skin/Duck-32.png");
+  -moz-image-region: rect(0px 32px 24px  0px);
+}

@@ -1,0 +1,8 @@
+<!ENTITY tbscript.label "Your localized menuitem">
+<!ENTITY tbscriptContext.label "Your Menuitem">
+<!ENTITY tbscriptContext.accesskey "Y">
+<!ENTITY tbscriptToolbarButton.label "DuckPond">
+<!ENTITY tbscriptToolbarButton.tooltip "Launch Duckpond's workflow manager.">
+<!ENTITY tbscriptSidebar.label "Your Sidebar">
+<!ENTITY tbscriptToolbar.name  "example">
+<!ENTITY tbscriptToolbar.label "This is an example toolbar. You can hide it under View &gt; toolbars &gt; &tbscriptToolbar.name;">

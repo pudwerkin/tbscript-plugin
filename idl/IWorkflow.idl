@@ -1,0 +1,42 @@
+#include "nsISupports.idl"
+#include "nsIVariant.idl"
+
+[scriptable, uuid(2572a9b1-889b-43d2-8807-336af3c5141f)] // via uuidgen
+interface IWorkflow : nsISupports {
+	boolean runWorkflow ();
+	
+	void getSettings (	in long moduleID,
+						out unsigned long count,
+						[array, size_is(count), retval] out wstring settings);
+						
+	void getSettingOptions (	in long moduleID,
+								in wstring settingName,
+								out unsigned long count,
+								[array, size_is(count), retval] out wstring options);
+								
+	wstring getSettingDescription ( 	in long moduleID,
+										in wstring settingName);
+						
+	boolean changeSetting (	in long moduleID, 
+							in wstring settingID, 
+							in nsIVariant value);
+		
+	long loadWorkflow (in wstring filename); // return number of modules
+		
+	boolean saveWorkflow (in wstring filename);
+		
+	long appendModule (in wstring moduleName);
+	
+	wstring getModuleName (in long moduleID);
+	
+	wstring getModuleDescription (in long moduleID);
+	
+	wstring getOutputType();
+	
+	boolean setRootModule (in wstring moduleName);
+		
+	boolean removeModuleFromEnd ();
+	
+	void clear();
+
+};

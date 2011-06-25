@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+
+<!DOCTYPE dialog SYSTEM "chrome://tbscript/locale/modulesettings.dtd">
+<dialog title="&modulesettings.title;" onload="modulesettings.init()" orient="vertical" width="320" height="480" 
+autostretch="true" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul" 
+buttons="accept">
+  <script src="modulesettings.js" />
+  <vbox id="settingsContainer" width="100px" style="overflow:auto">
+  </vbox>
+</dialog>

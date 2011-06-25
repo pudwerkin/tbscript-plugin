@@ -1,0 +1,11 @@
+#include "nsISupports.idl"
+
+[scriptable, uuid(4959cffa-aa24-4f12-b61e-e599eb1da4ea)] // via uuidgen
+interface IModuleFactory : nsISupports {
+	void getRootModuleList(	out unsigned long count,
+							[array, size_is(count), retval] out wstring modules);
+							
+	void getNodeModuleList( out unsigned long count,
+							[array, size_is(count), retval] out wstring modules);
+	
+};

@@ -1,0 +1,6 @@
+content   tbscript                 chrome/content/
+skin      tbscript   classic/1.0   chrome/skin/
+locale    tbscript   en-US         chrome/locale/en-US/
+
+
+overlay   chrome://messenger/content/messenger.xul chrome://tbscript/content/overlay.xul
